@@ -1,3 +1,4 @@
+import 'package:chat_ai/features/chat/speak_to_ai_page.dart';
 import 'package:chat_ai/features/home/widgets/history_card.dart';
 import 'package:chat_ai/features/home/widgets/idea_card.dart';
 import 'package:chat_ai/features/home/widgets/premium_card.dart';
@@ -28,6 +29,10 @@ class HomePage extends StatelessWidget {
                   IdeaCard(
                     text: 'Generate ideas and write articles',
                     icon: Icons.edit_outlined,
+                    onPressed: (){
+                      // navigate to ideas page
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> SpeakToAIPage()));
+                    },
                   ),
                   IdeaCard(
                     text: 'Generate pictures & art',
