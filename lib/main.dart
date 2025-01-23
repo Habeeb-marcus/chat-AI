@@ -61,8 +61,9 @@ class MyApp extends StatelessWidget {
           appBarTheme: AppBarTheme(
             centerTitle: true,
             titleTextStyle: GoogleFonts.poppins(
-              color: Colors.white,
-              fontSize: 17,
+                fontSize: 17,
+                // color: Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black,
+                color: Colors.white,
               fontWeight: FontWeight.w600,
             ),
             iconTheme: IconThemeData(

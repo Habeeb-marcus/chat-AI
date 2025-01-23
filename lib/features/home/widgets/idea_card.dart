@@ -36,7 +36,9 @@ final VoidCallback? onPressed;
                     ),
                     Text(
                       text,
-                      style: theme.textTheme.bodyMedium,
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: theme.brightness == Brightness.dark ? Colors.white : Colors.black,
+                      ),
                     ),
                   ],
                 ),

@@ -6,16 +6,20 @@ class SpeakToAIPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       appBar: AppBar(
-        title: Text('Speak to AI Bot'),
-        leading: Icon(Icons.arrow_back_ios),
+        title: Text('Speak to AI Bot',
+        ),
+        leading: InkWell(
+          onTap: () => Navigator.pop(context),
+          child: Icon(Icons.arrow_back_ios)),
         actions: [
           IconButton(
             icon: Icon(Icons.more_horiz),
             onPressed: () {
-              Navigator.pop(context);
+              
             },
           ),
         ],
