@@ -12,6 +12,7 @@ class HomePage extends StatelessWidget {
     final theme = Theme.of(context);
     return  SafeArea(
       child: Scaffold(
+        // bottomNavigationBar: BottomNavigationBar(items: items),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(20),
