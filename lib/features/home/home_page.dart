@@ -48,13 +48,14 @@ class HomePage extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
                 Wrap(
-                  children: List.generate(8, ( index) => const HistoryCard()),
-                ),
-
+                  children: List.generate(8, ( index) {
+                    return HistoryCard();
+                  }
               
                 // history text
 
                 // history list 
+                  ),)
               ],
             ),
           ),
